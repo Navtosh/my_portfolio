@@ -15,6 +15,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { LatestUpdatesComponent } from './latest-updates/latest-updates.component';
 import { ConnectComponent } from './connect/connect.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './common/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './footer/footer.component';
     TestimonialComponent,
     LatestUpdatesComponent,
     ConnectComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
