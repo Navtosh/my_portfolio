@@ -30,7 +30,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              //"node_modules/jquery/dist/jquery.min.js",
+              //"./assets/js/init.js",
+              //"./assets/js/plugins.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -99,9 +103,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              // "../node_modules/jquery/dist/jquery.min.js",
-              // "./assets/js/init.js",
-              // "./assets/js/plugins.js"
             ]
           }
         }

@@ -16,6 +16,7 @@ import { LatestUpdatesComponent } from './latest-updates/latest-updates.componen
 import { ConnectComponent } from './connect/connect.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './common/menu/menu.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,11 +33,13 @@ import { MenuComponent } from './common/menu/menu.component';
     LatestUpdatesComponent,
     ConnectComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
