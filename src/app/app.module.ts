@@ -18,6 +18,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './common/menu/menu.component';
 import { FormsModule } from '@angular/forms';
 
+//import { magicMouse } from 'magicmouse.js'
+
 @NgModule({
   declarations: [
     AppComponent,

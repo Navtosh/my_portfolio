@@ -7,9 +7,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  Menuitem :any;
+
+  constructor() {
+    this.Menuitem = [
+      {
+        name : 'Home',
+        href : 'home'
+      },
+      {
+        name : 'About',
+        href : 'about'
+      },
+      {
+        name : 'Portfolio',
+        href : 'portfolio'
+      },
+      {
+        name :  'Service',
+        href : 'service'
+      },
+      {
+        name : 'Testimonial',
+        href : 'testimonial'
+      },
+      {
+        name : 'Blog',
+        href : 'blog'
+      },
+      {
+        name : 'Contact',
+        href : 'contact'
+      }
+
+    ]
+   }
 
   ngOnInit(): void {
+    
   }
 
 }

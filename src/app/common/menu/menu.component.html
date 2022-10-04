@@ -1,9 +1,3 @@
-<ul id="anchor_nav">
-    <li class="current"><a href="#home" class="anchor">Home</a></li>
-    <li><a href="#about" class="anchor">About</a></li>
-    <li><a href="#portfolio" class="anchor">Portfolio</a></li>
-    <li><a href="#service" class="anchor">Service</a></li>
-    <li><a href="#testimonial" class="anchor">Testimonial</a></li>
-    <li><a href="#blog" class="anchor">Blog</a></li>
-    <li><a href="#contact" class="anchor">Contact</a></li>
+<ul class="anchor_nav ">
+    <li class="magic-hover magic-hover__square" *ngFor="let menu of Menuitem let index = index" [class.current]="index == 0" ><a href="#{{menu.href}}">{{menu.name}}</a></li>
  </ul>
