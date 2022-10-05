@@ -1,10 +1,11 @@
 jQuery(document).ready(function(){
+  //Function load on Document ready //
   navtosh_cursor();
   navtosh_moving_animation();
+ //Function load on Document ready //
 
-  $('.anchor_nav li:first').addClass('current');
 
-
+ // Header Position Fixed at top //
   var num = 200; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {
@@ -15,13 +16,15 @@ jQuery(document).ready(function(){
           $('.navtosh_header').removeClass('animate');
       }
   });
+ // Header Position Fixed at top //
 
 
+  // One page scroll menu //
   $(function($){
-    var topMenuHeight = $(".anchor_nav").outerHeight();
-    //var topMenuHeight = 135;
-    $(".anchor_nav").menuScroll(topMenuHeight);
-    console.log(topMenuHeight);
+      var topMenuHeight = $(".anchor_nav").outerHeight();
+      //var topMenuHeight = 135;
+      $(".anchor_nav").menuScroll(topMenuHeight);
+      console.log(topMenuHeight);
   });
   
   // COPY THE FOLLOWING FUNCTION INTO ANY SCRIPTS
@@ -82,6 +85,8 @@ jQuery(document).ready(function(){
       }
   });
 
+   // One page scroll menu //
+
   
   
 // -----------------------------------------------------
@@ -89,34 +94,29 @@ jQuery(document).ready(function(){
 // -----------------------------------------------------
 
 function navtosh_cursor(){
-	
   "use strict";
-
-var myCursor	= jQuery('.mouse-cursor');
-
-if(myCursor.length){
-  if ($("body")) {
-      const e = document.querySelector(".cursor-inner"),
-          t = document.querySelector(".cursor-outer");
-      let n, i = 0,
-          o = !1;
-      window.onmousemove = function (s) {
-          o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
-      }, $("body").on("mouseenter", "a,.navtosh_topbar .trigger, .cursor-pointer", function () {
-          e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
-      }), $("body").on("mouseleave", "a,.navtosh_topbar .trigger, .cursor-pointer", function () {
-          $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
-      }), e.style.visibility = "visible", t.style.visibility = "visible"
+  var myCursor	= jQuery('.mouse-cursor');
+  if(myCursor.length){
+    if ($("body")) {
+        const e = document.querySelector(".cursor-inner"),
+            t = document.querySelector(".cursor-outer");
+        let n, i = 0,
+            o = !1;
+        window.onmousemove = function (s) {
+            o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
+        }, $("body").on("mouseenter", "a,.navtosh_topbar .trigger, .cursor-pointer", function () {
+            e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
+        }), $("body").on("mouseleave", "a,.navtosh_topbar .trigger, .cursor-pointer", function () {
+            $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover"))
+        }), e.style.visibility = "visible", t.style.visibility = "visible"
+    }
   }
-}
 };
 
 
-
-function navtosh_moving_animation(){
-	
-	"use strict";
-	
+ // Element Moving  Animation //
+function navtosh_moving_animation(){	
+	"use strict";	
 	var detail     	= $('.moving_effect');
 	var offset		= 0;
 	detail.each(function(){
@@ -140,7 +140,7 @@ function navtosh_moving_animation(){
 		});
 	});
 }
-
+ // Element Moving  Animation //
 
 
 

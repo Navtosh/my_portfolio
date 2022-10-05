@@ -27,9 +27,14 @@ export class MenuComponent implements OnInit {
         name :  'Service',
         href : 'service'
       },
+      // {
+      //   name : 'Testimonial',
+      //   href : 'testimonial'
+      // },
+
       {
-        name : 'Testimonial',
-        href : 'testimonial'
+        name: 'Know More',
+        href: 'knowMore'
       },
       {
         name : 'Blog',
