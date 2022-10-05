@@ -11,9 +11,9 @@ jQuery(document).ready(function(){
   $(window).bind('scroll', function () {
     //alert('Test');
       if ($(window).scrollTop() > num) {
-          $('.navtosh_header').addClass('animate');
+          $('.header').addClass('animate');
       } else {
-          $('.navtosh_header').removeClass('animate');
+          $('.header').removeClass('animate');
       }
   });
  // Header Position Fixed at top //
