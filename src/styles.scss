@@ -419,7 +419,7 @@ h6 {
 	float: left;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 30px 0;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
@@ -508,7 +508,7 @@ h6 {
 	position: relative;
 	float: left;
 	clear: both;
-	background-color:#16213E;
+	// background-color:#16213E;
 	overflow: hidden
 }
 
@@ -530,7 +530,7 @@ h6 {
 }
 
 .hero .content .hello {
-	font-family: josefin sans;
+	font-family: josefin sans-serif;
 	font-size: 25px;
 	font-weight: 700;
 	color: #fff;
@@ -540,7 +540,7 @@ h6 {
 }
 
 .hero .content .name {
-    font-size: 150px;
+    font-size: 116px;
     font-weight: 700;
     color: #4c2f34;
     text-align: center;
@@ -590,7 +590,8 @@ h6 {
   }
 
 .hero .content .job {
-	overflow: hidden
+	overflow: hidden;
+	margin-top: 5%;
 }
 
 .hero .cd-headline {
@@ -602,88 +603,375 @@ h6 {
 	
 }
 
-
-.wordCarousel {
-    font-size: 36px;
+.wordCarousel{
+	color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
     font-weight: 100;
-    color: #eee;
-    div {
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+
+	.message {
+		background-color: yellow;
+		color: #333;
+		display: block;
+		font-weight: 900;
 		overflow: hidden;
-		position: relative;
-		/* float: left; */
-		height: 45px;
-		padding-top: 0;
-		margin-top: 0;
-		display: inline-block;
-		vertical-align: bottom;
-        li {
-			font-family: josefin sans-serif;
-			color: #eee;
-			font-weight: 700;
-			padding: 0 10px;
-			height: 45px;
-			margin-bottom: 45px;
-			display: block;
-			text-align: left;
-        }
-    }
+		position: absolute;
+		padding-left: 0.5rem;
+		top: 0.2rem;
+		left: 270px;
+		animation: openclose 5s ease-in-out infinite;
+	  }
+	  
+	  .word1, .word2, .word3 {
+		font-family: tahoma;
+	  }
+	  
+	  @keyframes openclose {
+		0% {
+		  top: 0.2rem;
+		  width: 0;
+		}
+		5% {
+		  width: 0;
+		}
+		15% {
+		  width: 230px;
+		}
+		30% {
+		  top: 0.2rem;
+		  width: 230px;
+		}
+		33% {
+		  top: 0.2rem;
+		  width: 0;
+		}
+		35% {
+		  top: 0.2rem;
+		  width: 0;
+		}
+		38% {
+		  top: -4.5rem;
+		  
+		}
+		48% {
+		  top: -4.5rem;
+		  width: 190px;
+		}
+		62% {
+		  top: -4.5rem;
+		  width: 190px;
+		}
+		66% {
+		  top: -4.5rem;
+		  width: 0;
+		  text-indent: 0;
+		}
+		71% {
+		  top: -9rem;
+		  width: 0;
+		  text-indent: 5px;
+		}
+		86% {
+		  top: -9rem;
+		  width: 285px;
+		}
+		95% {
+		  top: -9rem;
+		  width: 285px;
+		}
+		98% {
+		  top: -9rem;
+		  width: 0;
+		  text-indent: 5px;
+		}
+		100% {
+		  top: 0;
+		  width: 0;
+		  text-indent: 0;
+		}
+	  }
+	  
 }
 
-.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
 
-.flip5 { animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
 
-@keyframes flip2 {
-    0% { margin-top: -180px; }
-    5% { margin-top: -90px;  }
-    50% { margin-top: -90px; }
-    55% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -180px; }
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
 }
 
-@keyframes flip3 {
-    0% { margin-top: -270px; }
-    5% { margin-top: -180px; }
-    33% { margin-top: -180px; }
-    38% { margin-top: -90px; }
-    66% { margin-top: -90px; }
-    71% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -270px; }
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
-@keyframes flip4 {
-    0% { margin-top: -360px; }
-    5% { margin-top: -270px; }
-    25% { margin-top: -270px; }
-    30% { margin-top: -180px; }
-    50% { margin-top: -180px; }
-    55% { margin-top: -90px; }
-    75% { margin-top: -90px; }
-    80% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -360px; }
-}
-
-@keyframes flip5 {
-    0% { margin-top: -450px; }
-    5% { margin-top: -360px; }
-    20% { margin-top: -360px; }
-    25% { margin-top: -270px; }
-    40% { margin-top: -270px; }
-    45% { margin-top: -180px; }
-    60% { margin-top: -180px; }
-    65% { margin-top: -90px; }
-    80% { margin-top: -90px; }
-    85% { margin-top: 0px; }
-    99.99% { margin-top: 0px; }
-    100% { margin-top: -450px; }
+.typing_effect{
+	text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 155px;
+    animation: type 5s steps(40, end) infinite;
 }
 
 
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+
+@keyframes move-background {
+	from {
+		  -webkit-transform: translate3d(0px, 0px, 0px);
+	  }
+	  to { 
+		  -webkit-transform: translate3d(1000px, 0px, 0px);
+	  }
+  }
+  @-webkit-keyframes move-background {
+	from {
+		  -webkit-transform: translate3d(0px, 0px, 0px);
+	  }
+	  to { 
+		  -webkit-transform: translate3d(1000px, 0px, 0px);
+	  }
+  }
+  
+  @-moz-keyframes move-background {    
+	  from {
+		  -webkit-transform: translate3d(0px, 0px, 0px);
+	  }
+	  to { 
+		  -webkit-transform: translate3d(1000px, 0px, 0px);
+	  }
+  }
+  
+	  @-webkit-keyframes move-background {
+	  from {
+		  -webkit-transform: translate3d(0px, 0px, 0px);
+	  }
+	  to { 
+		  -webkit-transform: translate3d(1000px, 0px, 0px);
+	  }
+  }
+  
+  .background-container{
+	position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+	  
+  .stars {
+	background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+	position: absolute;
+	   top: 0;
+	   bottom: 0;
+	   left: 0;
+	   right: 0;
+	   display: block;
+	   z-index: 0;
+	   width: auto;
+	   height: auto;
+	   transform: none;
+   }
+   
+   .twinkling{
+	   width:10000px;
+	   height: 100%;
+	   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	   background-size: 1000px 1000px;
+	   position: absolute;
+	   right: 0;
+	   top: 0;
+	   bottom: 0;
+	   z-index: 2;
+	   
+	   -moz-animation:move-background 70s linear infinite;
+	 -ms-animation:move-background 70s linear infinite;
+	 -o-animation:move-background 70s linear infinite;
+	 -webkit-animation:move-background 70s linear infinite;
+	 animation:move-background 70s linear infinite;
+	   
+   }
+   
+   .clouds{
+	   width:10000px;
+	   height: 100%;
+	   background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+	   background-size: 1000px 1000px;
+	   position: absolute;
+	   right: 0;
+	   top: 0;
+	   bottom: 0;
+	   z-index: 3;
+   
+	  -moz-animation:move-background 150s linear infinite;
+	 -ms-animation:move-background 150s linear infinite;
+	 -o-animation:move-background 150s linear infinite;
+	 -webkit-animation:move-background 150s linear infinite;
+	 animation:move-background 150s linear infinite;
+   }
+   img{
+		height: 30vh;
+		width: 30vh;
+		position: absolute;
+		z-index: 3;
+		right: -50px;
+		top: -50px;
+   }
+  }
+  
+
+  @mixin sp-layout {
+	@media screen and (max-width: 750px) {
+	  @content;
+	}
+  }
+  
+@function random_range($min, $max) {
+	$rand: random();
+	$random_range: $min + floor($rand * (($max - $min) + 1));
+	@return $random_range;
+  }
+  
+  .stars {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	transform: rotate(-45deg);
+	z-index: -1;
+  }
+  
+  .star {
+	$star-count: 50;
+	--star-color: var(--primary-color);
+	--star-tail-length: 6em;
+	--star-tail-height: 2px;
+	--star-width: calc(var(--star-tail-length) / 6);
+	--fall-duration: 9s;
+	--tail-fade-duration: var(--fall-duration);
+  
+	position: absolute;
+	top: var(--top-offset);
+	left: 0;
+	width: var(--star-tail-length);
+	height: var(--star-tail-height);
+	color: var(--star-color);
+	background: linear-gradient(45deg, currentColor, transparent);
+	border-radius: 50%;
+	filter: drop-shadow(0 0 6px currentColor);
+	transform: translate3d(104em, 0, 0);
+	animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+	
+	@include sp-layout {
+	  // For mobile performance, tail-fade animation will be removed QAQ
+	  animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+	}
+  
+	@for $i from 1 through $star-count {
+	  &:nth-child(#{$i}) {
+		--star-tail-length: #{random_range(500em, 750em) / 100};
+		--top-offset: #{random_range(0vh, 10000vh) / 100};
+		--fall-duration: #{random_range(6000, 12000s) / 1000};
+		--fall-delay: #{random_range(0, 10000s) / 1000};
+	  }
+	}
+  
+	&::before, &::after {
+	  position: absolute;
+	  content: '';
+	  top: 0;
+	  left: calc(var(--star-width) / -2);
+	  width: var(--star-width);
+	  height: 100%;
+	  background: linear-gradient(45deg, transparent, currentColor, transparent);
+	  border-radius: inherit;
+	  animation: blink 2s linear infinite;
+	}
+  
+	&::before {
+	  transform: rotate(45deg);
+	}
+  
+	&::after {
+	  transform: rotate(-45deg);
+	}
+  }
+  
+  @keyframes fall {
+	to {
+	  transform: translate3d(-30em, 0, 0);
+	}
+  }
+  
+  @keyframes tail-fade {
+	0%, 50% {
+	  width: var(--star-tail-length);
+	  opacity: 1;
+	}
+  
+	70%, 80% {
+	  width: 0;
+	  opacity: 0.4;
+	}
+  
+	100% {
+	  width: 0;
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes blink {
+	50% {
+	  opacity: 0.6;
+	}
+  }
+
+  
 
 .hero .cd-headline b {
 	font-size: 75px
@@ -933,11 +1221,17 @@ h6 {
 }
 
 .about {
+	// width: 100%;
+	// height: auto;
+	// clear: both;
+	// float: left;
+	// padding: 170px 0;
 	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding: 170px 0
+    height: auto;
+    clear: both;
+    float: left;
+    padding: 170px 0;
+    background: rgba(0,255,255,.8);
 }
 
 .about .about_inner {
