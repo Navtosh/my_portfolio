@@ -13,18 +13,8 @@ declare var $: any;
 
 
   export class AppComponent implements OnInit {
-    
-  title = 'LatestPortfolio';
-
-  
-  ngOnInit() {
-    $('butto').click(function() {
-      alert('GeeksForGeeks');
-    });
-
-
-    
-
+  title = 'LatestPortfolio';  
+  ngOnInit():void {
   }
   
 }

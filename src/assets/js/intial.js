@@ -24,7 +24,7 @@ jQuery(document).ready(function(){
       var topMenuHeight = $(".anchor_nav").outerHeight();
       //var topMenuHeight = 135;
       $(".anchor_nav").menuScroll(topMenuHeight);
-      console.log(topMenuHeight);
+     // console.log(topMenuHeight);
   });
   
   // COPY THE FOLLOWING FUNCTION INTO ANY SCRIPTS
