@@ -17,11 +17,12 @@ jQuery(document).ready(function(){
 	navtosh_hero_image();
 	navtosh_service_popup();
 	navtosh_portfolio_popup();
+	navtosh_portfolio();
 	navtosh_news_popup();
 	navtosh_cursor();
 	navtosh_imgtosvg();
 	navtosh_popup();
-	navtosh_portfolio();
+	
 	navtosh_data_images();
 	navtosh_contact_form();
 	navtosh_jarallax();

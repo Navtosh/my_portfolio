@@ -1515,6 +1515,11 @@ h6 {
 	font-family: open sans;
 	font-size: 18px
 }
+.progress_inner span.perc{
+    float: right;
+    margin-top: -2px;
+    margin-left: 2px;
+}
 
 .progress_inner .background {
 	background: rgba(255, 255, 255, .3);
@@ -1619,7 +1624,18 @@ h6 {
 	-moz-transition: all .3s ease;
 	-ms-transition: all .3s ease;
 	-o-transition: all .3s ease;
-	transition: all .3s ease
+	transition: all .3s ease;
+	cursor: pointer;
+	position:relative;
+}
+.portfolio .portfolio_filter ul li a.current:after{
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -6px;
+    height: 3px;
+    background: #fff;
+    bottom: -6px;
 }
 
 .portfolio .portfolio_list {
@@ -1638,7 +1654,8 @@ h6 {
 	margin: 0 0 25px;
 	width: 33.3333%;
 	float: left;
-	padding-left: 25px
+	padding-left: 25px;
+	// height: 423px;
 }
 
 .portfolio .portfolio_list ul li .list_inner {
@@ -1813,12 +1830,17 @@ h6 {
 
 .modalbox .close a {
 	text-decoration: none;
-	color: #fff
+    color: #fff;
+    display: block;
+    width: 50px;
+    height: 50px;
 }
 
 .modalbox .close .svg {
 	width: 50px;
-	height: 50px
+	height: 50px;
+	color: #fff;
+    filter: brightness(0) invert(1);
 }
 
 .modalbox .description_wrap {
@@ -4411,3 +4433,4 @@ https://alvarotrigo.com/blog/css-text-animations/
 https://www.sliderrevolution.com/resources/css-text-animation/
 https://codemyui.com/tag/text-animation/page/2/
 */ //////
+

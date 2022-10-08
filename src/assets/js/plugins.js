@@ -3957,10 +3957,6 @@ e(this):c.doc,k=new N(c,e(this)),e(this).data("__nicescroll",k));h.push(k)});ret
 
 
 
-
-
-
-
 /*!
  * Name    : Just Another Parallax [Jarallax]
  * Version : 1.9.0

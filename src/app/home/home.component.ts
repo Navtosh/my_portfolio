@@ -26,7 +26,7 @@ public loaderContainerRemove(){
   ngOnInit():void {
     setTimeout(() => {
       this.loaderContainer();
-    }, 6000); 
+    }, 3000); 
     setTimeout(() => {
       this.loaderContainerRemove();
     }, 7000);   
